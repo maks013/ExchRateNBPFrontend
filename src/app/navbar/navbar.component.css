@@ -1,0 +1,33 @@
+nav {
+  background-color: transparent;
+  color: white;
+  padding: 1%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+}
+
+.container-additional {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 20%;
+}
+
+.brand {
+  color: #ff8e17;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding-inline: 4%;
+}
+
+.nav-btn {
+  color: #263238;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding-inline: 20%;
+}
