@@ -15,7 +15,6 @@ import {FooterComponent} from "../footer/footer.component";
 
 export class HomeComponent {
   start() {
-    console.log('Start button clicked!');
-    // Add your logic here
+
   }
 }
