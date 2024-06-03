@@ -1,0 +1,101 @@
+.exchange-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.exchange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5%;
+}
+
+.input-section, .image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+
+.input-row {
+  display: flex;
+  width: 100%;
+  gap: 1%;
+}
+
+.name-input, .select-curr, .exchBtn {
+  margin: 1% 0;
+}
+
+.name-input, .select-curr {
+  padding: 4%;
+  border-radius: 6px;
+  border: 1px solid #ff8e17;
+  font-size: 1.2rem;
+}
+
+.name-input {
+  flex: 2;
+}
+
+.select-curr {
+  flex: 1;
+  padding: 4%;
+  border: none;
+}
+
+.name-input:focus, .select-curr:focus {
+  outline: none;
+}
+
+.exchBtn {
+  color: white;
+  background-color: #ff8e17;
+  border-radius: 6px;
+  padding: 4%;
+  width: 100%;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.3s;
+  margin-bottom: 10%;
+}
+
+.exchBtn:hover, .exchBtn:active, .exchBtn:focus {
+  transform: translateY(1px);
+}
+
+.image-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.output-txt {
+  font-size: 1.2rem;
+}
+
+.output-content {
+  padding: 4%;
+  border-radius: 6px;
+  border: 1px solid #ff8e17;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  width: 90%;
+}

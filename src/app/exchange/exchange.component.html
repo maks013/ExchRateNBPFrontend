@@ -1,1 +1,26 @@
-<p>exchange works!</p>
+<div class="exchange-container">
+  <app-navbar></app-navbar>
+  <div class="exchange">
+    <div class="input-section">
+      <div class="input-container">
+        <div class="input-row">
+          <input class="name-input" type="text" id="name" name="name" placeholder="Your Full Name">
+          <select class="select-curr" name="currencies" id="currencies">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+          </select>
+        </div>
+        <button class="exchBtn" type="button" (click)="exchange()">Exchange</button>
+        <label class="output-txt">Current Rate</label>
+        <div class="output-content" id="outputContent">4.3232</div>
+      </div>
+    </div>
+    <div class="image-section">
+      <div class="image-content">
+        <img src="assets/images/exchange.png" alt="Exchange Image">
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>
