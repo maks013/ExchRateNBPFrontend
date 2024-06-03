@@ -1,0 +1,57 @@
+.exchange-history-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.table-container {
+  display: flex;
+  width: 80%;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.exchange-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Roboto, serif;
+  table-layout: fixed;
+  border-radius: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.exchange-history-table th, .exchange-history-table td {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #263238;
+  white-space: nowrap;
+}
+
+.exchange-history-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #ff8e17;
+  color: white;
+}
+
+.exchange-history-table tr {
+  background-color: #f2f2f2;
+}
+
+.exchange-history-table tr:hover {
+  background-color: #ddd;
+}
+
+mat-paginator {
+  display: flex;
+  justify-content: center;
+  color: #263238;
+  background-color: transparent;
+}

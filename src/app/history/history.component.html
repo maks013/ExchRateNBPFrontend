@@ -1,1 +1,35 @@
-<p>history works!</p>
+<div class="exchange-history-container">
+  <app-navbar></app-navbar>
+  <div class="table-container">
+    <table mat-table [dataSource]="dataSource" class="exchange-history-table">
+
+      <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Name</th>
+        <td mat-cell *matCellDef="let rate"> {{ rate.name }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="currency">
+        <th mat-header-cell *matHeaderCellDef> Currency</th>
+        <td mat-cell *matCellDef="let rate"> {{ rate.currency }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="date">
+        <th mat-header-cell *matHeaderCellDef> Date</th>
+        <td mat-cell *matCellDef="let rate"> {{ rate.date | date:'short' :'UTC' }}</td>
+      </ng-container>
+
+      <ng-container matColumnDef="value">
+        <th mat-header-cell *matHeaderCellDef> Value</th>
+        <td mat-cell *matCellDef="let rate"> {{ rate.value }}</td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <mat-paginator
+      [pageSize]="6">
+    </mat-paginator>
+  </div>
+  <app-footer></app-footer>
+</div>

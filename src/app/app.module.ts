@@ -1,23 +1,28 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutes } from './app.routes';
 import { HomeComponent } from './home/home.component';
 import { HistoryComponent } from './history/history.component';
 import { ExchangeComponent } from './exchange/exchange.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    BrowserModule,
     AppRoutes,
-    ExchangeComponent,
-    HistoryComponent,
+    AppComponent,
     HomeComponent,
-    AppComponent
+    HistoryComponent,
+    ExchangeComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
