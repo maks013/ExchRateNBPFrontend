@@ -4,16 +4,14 @@
     <div class="input-section">
       <div class="input-container">
         <div class="input-row">
-          <input class="name-input" type="text" id="name" name="name" placeholder="Your Full Name">
-          <select class="select-curr" name="currencies" id="currencies">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <option value="GBP">GBP</option>
+          <input class="name-input" type="text" id="name" name="name" placeholder="Your Full Name" [(ngModel)]="name">
+          <select class="select-curr" name="currencies" id="currencies" [(ngModel)]="selectedCurrency">
+            <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
           </select>
         </div>
         <button class="exchBtn" type="button" (click)="checkRate()">Check rate!</button>
         <label class="output-txt">Current Rate</label>
-        <div class="output-content" id="outputContent">4.3232</div>
+        <div class="output-content" id="outputContent">{{ currentRate !== null ? currentRate : '' }}</div>
       </div>
     </div>
     <div class="image-section">
